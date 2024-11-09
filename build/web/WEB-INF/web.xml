@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!--Handling error 404 Not found-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+    <!--Configured Landing page of the web application-->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!--Servlet Declaration-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.project.servlets.LoginServlet</servlet-class>
+    </servlet>
+<!--    <servlet>
+        <servlet-name>AddFlightServlet</servlet-name>
+        <servlet-class>com.project.servlets.AddFlightServlet</servlet-class>
+    </servlet>-->
+    
+    <!--Servlet Mapping-->
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+<!--    <servlet-mapping>
+        <servlet-name>AddFlightServlet</servlet-name>
+        <url-pattern>/AddFlightServlet</url-pattern>
+    </servlet-mapping>-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

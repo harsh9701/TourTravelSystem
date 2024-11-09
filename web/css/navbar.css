@@ -1,0 +1,64 @@
+/* 
+    Created on : Sep 6, 2024, 3:46:20 AM
+    Author     : HARSH
+*/
+
+.middle-navbar {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.nav-options {
+    text-decoration: none;
+    margin: 0 7px 0 7px;
+    font-size: 1.2rem;
+}
+
+.nav-options:hover {
+    color: #000 !important;
+    text-decoration: overline;
+}
+
+.search-bar {
+    width: 35%;
+}
+
+@media only screen and (max-width: 1120px) {
+    .links {
+        display: none;
+    }
+
+    .middle-navbar {
+        justify-content: center;
+    }
+
+    .search-bar {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 857px) {
+
+    .middle-navbar {
+        width: 40%;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 518px) {
+    .logo-text {
+        display: none;
+    }
+
+    .middle-navbar {
+        width: 60%;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}

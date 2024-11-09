@@ -1,0 +1,100 @@
+/*
+    Created on : Sep 6, 2024, 1:37:55 AM
+    Author     : HARSH
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------Slider CSS-----------*/
+.carousel-item img {
+    height: 500px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: black;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.carousel-btn {
+    background-color: #000 !important;
+    height: 4px !important;
+    width: 35px !important;
+}
+
+.accordion {
+    margin: 10px !important;
+}
+
+.travel-cards {
+    min-width: 320px !important;
+    max-width: 320px !important;
+    margin: 10px;
+    transition: color 0.5s ease, transform 0.3s ease;
+}
+
+.travel-cards:hover {
+    transform: scale(1.05);
+}
+
+/* Card Title Styling */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10px;
+    cursor: default;
+}
+
+/* Travel Card Image */
+.card-img-top {
+    width: 80px;
+    height: 210px;
+    object-fit: fill;
+}
+
+/* Button Group Styling */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+/* Button Customization */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-outline-secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.collapse-btn {
+    --bs-btn-padding-y: .75rem !important;
+    --bs-btn-padding-x: 1.8rem !important;
+    --bs-btn-font-size: 1rem !important;
+}
+
+@media only screen and (max-width: 815px) {
+    .card-section {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .collapse-btn {
+        --bs-btn-padding-y: .25rem !important;
+        --bs-btn-padding-x: 0.8rem !important;
+        --bs-btn-font-size: .5rem !important;
+    }
+}
